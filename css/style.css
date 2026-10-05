@@ -39,3 +39,33 @@ footer{background:#111014;color:#bdb5aa;padding:30px 0}footer .wrap{display:flex
 @media (max-width:759px) {
   .memory-section { padding-top: 48px; }
 }
+
+/* Mobile performance revision */
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.monogram,.footer-monogram,.portrait-placeholder span,.portrait-caption,.hero h1,blockquote,.memory-card h2{font-family:Georgia,"Times New Roman",serif}
+.hero-actions .btn{gap:.45rem;flex-wrap:wrap}
+.hero-actions .btn small{font-size:10px;font-weight:500;opacity:.72;letter-spacing:.02em}
+.mobile-tip{display:none;color:#cfc6ba;font-size:12px;line-height:1.5;margin:14px 0 0;max-width:36rem}
+@media(max-width:759px){
+  .wrap{width:min(100% - 28px,1120px)}
+  .hero-inner{padding:28px 0 40px;gap:28px}
+  .portrait-shell{max-width:300px}
+  .portrait-frame{padding:6px;box-shadow:0 18px 44px #0005}
+  .portrait-caption{margin-top:8px;font-size:15px}
+  .hero-copy{text-align:center}
+  .gold-rule{margin:14px auto}
+  .hero h1{font-size:clamp(40px,12vw,58px);line-height:.94}
+  blockquote{font-size:18px;margin:20px auto 22px;text-align:left;max-width:330px}
+  .hero-actions{grid-template-columns:1fr 1fr;gap:9px}
+  .btn{min-height:56px;padding:10px 12px;font-size:13px;line-height:1.2;border-radius:16px}
+  .hero-actions .btn small{width:100%;display:block}
+  .mobile-tip{display:block}
+  .memory-section{padding:34px 0 42px}
+  .memory-card{padding:22px;border-radius:18px}
+  .memory-card h2{font-size:36px}
+  footer{padding:24px 0}
+}
+@media(max-width:390px){
+  .hero-actions{grid-template-columns:1fr}
+  .portrait-shell{max-width:260px}
+}
